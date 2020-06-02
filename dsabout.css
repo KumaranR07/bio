@@ -1,0 +1,233 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+
+section{
+  margin: 4em;
+  padding: 4em;
+}
+
+
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+.headpic {border:4px solid black;width: 300px;height: 320px;}
+.head1 {padding: 10px 10px 10px 10px; text-align: center; border:2px solid yellow; background-color:black;color: white;}
+.head2 { padding: 10px 10px 10px 10px; text-align: center;background-color:black; border:4px solid red; color:white;}
+header {
+  padding: 1em;  text-align: center;background-image: url('./img/t6.jpg');
+background-size: 100% 100%;
+background-position:"fixed";
+  color:red;
+}
+
+
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+
+
+
+header img {
+  border-radius: 2%;
+  max-width: 150px;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+
+
+.vm {padding: 10px 10px 10px 10px; text-align: center; border:2px solid yellow; background-color:black;color: white}
+
+
+
+main {
+  max-width: 1140px;
+}
+
+
+
+main section:not(:last-child)
+
+{
+  border-bottom: 1px solid #ccc;
+}
+
+.fab 
+{
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+
+
+.bodycs {  
+background-image: url('./img/t6.jpg'); background-size: 100% 100%;background-position:"fixed";color:white; }
+
+
+.list1 {
+    list-style: none;
+    background-color:black;
+    padding: 0;
+    font-weight: 900;
+    color:white;
+}
+
+.list1 > li {
+    display: inline;
+}
+
+.list1 > li:not(:last-child)::after {
+    content: "|";
+    margin: 5em;}
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+  padding: 10px 10px 10px 10px; text-align: center;
+  border:2px solid yellow;
+  background-color:black;
+  color: yellow;
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+  border-radius: 0%;
+
+
+
+
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.1s ease;
+  border-radius: 3px 3px 3px 3px;
+  user-select: none;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+
